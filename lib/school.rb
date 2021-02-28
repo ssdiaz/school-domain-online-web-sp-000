@@ -20,8 +20,21 @@ attr_reader :school, :roster
   end
 
   def grade (grade)
+    #returns list of students in a grade
       roster[grade]
   end
 
+  def sort
+  #soreted list of all students of all grades
+    #note: hashes are unordered, but arrays (students names) can be ordered
+
+    #iterate through all hash kes and sort values?
+
+
+    roster.collect do |grand, name|
+      roster[grade][name].sort
+    end
+
+  end
 
 end
