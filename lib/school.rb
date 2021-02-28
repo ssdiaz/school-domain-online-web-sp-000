@@ -7,7 +7,7 @@ attr_reader :school, :roster
 
   def initialize (school)
     @school = school
-    @roster = {}
+    @roster = {} #key (grade), value(array of names)
   end
 
   # def school
@@ -17,5 +17,13 @@ attr_reader :school, :roster
   # def roster
   #   @roster = {}
   # end
+
+  def add_student (name, grade)
+    roster[grade] = []
+    roster[grade] << name
+
+
+  end
+
 
 end
