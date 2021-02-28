@@ -33,7 +33,7 @@ attr_reader :school, :roster
        roster[grade][name].sort
        roster
     end
-    roster
+  #  roster
   end
 
 end
