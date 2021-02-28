@@ -30,7 +30,7 @@ attr_reader :school, :roster
 
     #iterate through all hash key and sort values?
     roster.collect do |grade, name|
-      name = roster[grade].sort
+       roster[grade].sort
     end
     roster 
   end
