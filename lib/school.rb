@@ -32,7 +32,7 @@ attr_reader :school, :roster
 
 
     roster.collect do |grand, name|
-      roster[grade][name].sort
+      roster[grade].sort
     end
 
   end
