@@ -19,11 +19,10 @@ attr_reader :school, :roster
   # end
 
   def add_student (name, grade)
-  # 10 => ["Jeff Baird", "Blake Johnson"]
-
-roster[grade]
-
   #first, create the key set to an array, then << in name
+    #roster[grade] = []
+  #but what if array already has data? Don't want to erase data.
+    # use ||= to day use roster[grade] or make new empty array if does not yet exist
     roster[grade] ||= []
     roster[grade] << name
   end
