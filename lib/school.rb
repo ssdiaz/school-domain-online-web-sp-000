@@ -20,7 +20,12 @@ attr_reader :school, :roster
 
   def add_student (name, grade)
     #first, create the key set to an array, then << in name
-    roster[grade] = [] unless roster[grade].length > 0
+
+    if roster[grade].empty?
+        roster[grade] = []
+    end
+
+    #roster[grade] = []
     roster[grade] << name
   end
 
