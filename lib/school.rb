@@ -38,5 +38,5 @@ attr_reader :school, :roster
      #return new hash
      sorted_roster
   end
-  
+
 end
