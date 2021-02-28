@@ -4,7 +4,6 @@ class School
 attr_accessor
 attr_reader :school, :roster
 
-
   def initialize (school)
     @school = school
     @roster = {} #key (grade), value ([array] of names)
@@ -28,13 +27,16 @@ attr_reader :school, :roster
   #soreted list of all students of all grades
     #note: hashes are unordered, but arrays (students names) can be ordered
 
-    #iterate through all hash key and sort values?
+    #iterate through all hash key and sort values
+      #but need a place to store key/value pairs: make a new hash
     sorted_roster = {}
+
     roster.collect do |grade, name|
+        #new hash keys set equal to sorted array
         sorted_roster[grade] = name.sort
      end
+     #return new hash
      sorted_roster
-
   end
-
+  
 end
