@@ -29,8 +29,8 @@ attr_reader :school, :roster
     #note: hashes are unordered, but arrays (students names) can be ordered
 
     #iterate through all hash key and sort values?
-    roster.collect do |grade|
-      roster[grade].sort
+    roster.collect do |grade, name|
+      name = roster[grade].sort
     end
 
   end
